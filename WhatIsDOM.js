@@ -6,11 +6,11 @@ Document Object Model
 * JavaScript can be used to read, write and Manipulate to the DOM
 * It is the Object Oriendted Representation
 
-                            Document
-                               |
+                               Document
+                                  |
                             Root Element
                                 <html>
-                                |
+                                  |
                  -------------------------------------               
                  |                                   |
                Element                              Element
