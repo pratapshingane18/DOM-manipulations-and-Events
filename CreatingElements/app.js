@@ -1,3 +1,72 @@
+//We can construct DOM element from scratch in Vanilla Javascript// create a Element;
+
+const li = document.createElement('li');
+
+// Add class
+li.className = 'collection-item';
+
+// Add Attribute
+li.setAttribute('title','New ListItem');
+
+// Create Text Node and Append
+
+li.appendChild(document.createTextNode('Hello World'));
+
+
+// Create New Link element:
+const link = document.createElement('a');
+
+// add classs
+link.className = 'delete-item secondary-content';
+
+// add Html for Adding Icon
+link.innerHTMl = '<i class="fa fa-remove"></i>';
+
+// append Link into li
+li.appendChild(link);
+
+//Append li as child to ul
+document.querySelector('ul.collection').appendChild(li);
+val = li.children;
+console.log(val);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // document.getElementsByClassName
 
 // const items = document.getElementsByClassName('collection-item');
@@ -30,22 +99,22 @@
 // console.log(lis);
 
 // document.querySelectorAll
-const items = document.querySelectorAll('ul.collection li.collection-item');
+// const items = document.querySelectorAll('ul.collection li.collection-item');
 
-items.forEach(function(item, index){
-    item.textContent = `${index}: Hello`;
-});
+// items.forEach(function(item, index){
+//     item.textContent = `${index}: Hello`;
+// });
 
-const liOdd = document.querySelectorAll('li:nth-child(odd)');
-const liEven = document.querySelectorAll('li:nth-child(even)');
+// const liOdd = document.querySelectorAll('li:nth-child(odd)');
+// const liEven = document.querySelectorAll('li:nth-child(even)');
 
-liOdd.forEach(function(li, index){
-  li.style.background = '#ccc';
-});
+// liOdd.forEach(function(li, index){
+//   li.style.background = '#ccc';
+// });
 
-for(let i = 0; i < liEven.length; i++){
-  liEven[i].style.background = '#f4f4f4';
-}
+// for(let i = 0; i < liEven.length; i++){
+//   liEven[i].style.background = '#f4f4f4';
+// }
 
 
-console.log(items);
+// console.log(items);
